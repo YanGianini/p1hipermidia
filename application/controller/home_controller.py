@@ -7,6 +7,6 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/video")
-def video():
-    render_template("videos.html")
+@app.route("/videos")
+def videos():
+    return render_template("videos.html")
