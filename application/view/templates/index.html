@@ -8,6 +8,22 @@
 </head>
 <body>
     <p>Index</p>
+    {% for categoria in listaCategorias %}
+    <div>
+        <p>{{ categoria.get_url_img() }}</p>
+        <h3>{{categoria.get_titulo()}}</h3>
+        <h2>videos mais curtidos</h2>
+        {% for video in categoria.get_videos()%}
+
+        <h4>{{ video.get_titulo() }}</h4>
+
+        {% endfor %}
+    </div>
+     
+
+
+    {% endfor %}
+
     <a href="{{ url_for('videos') }}">video</a>
 </body>
 </html>

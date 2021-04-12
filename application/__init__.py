@@ -19,10 +19,13 @@ video7 = Video(7, "urls", "urls da img", "titulo aqui", "descrição aqui", 1, "
 video8 = Video(8, "urls", "urls da img", "titulo aqui", "descrição aqui", 9, "02/12/2021", "comida")
 video9 = Video(9, "urls", "urls da img", "titulo aqui", "descrição aqui", 7, "02/12/2021", "comida")
 
+videos = [video1, video2, video3, video4, video5, video6, video7, video8, video9]
 
 categoria1 = Categoria(1, "humor", "coisas engraçadas no geral", "urls aqui")
 categoria2 = Categoria(2, "musica", "musicas de diversos generos", "urls")
 categoria3 = Categoria(3, "comida", "receitas e culinaria", "urls")
+
+categorias = [categoria1, categoria2, categoria3]
 
 categoria1.add_video(video1)
 categoria1.add_video(video2)
