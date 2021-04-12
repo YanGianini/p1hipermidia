@@ -8,4 +8,3 @@ class VideoDAO():
     def lista_videos(self):
         return self.videos
 
-    

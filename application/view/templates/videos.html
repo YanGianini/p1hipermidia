@@ -8,8 +8,20 @@
 </head>
 <body>
    
-    <p>Videos</p>
-    <a href="{{ url_for('index') }}">Index</a>
+    <p>Seu video</p>
+
+    <p>{{ video.get_titulo() }}</p>
+    <p>{{ video.get_url_video() }}</p>
+
+
+    <video>
+        <source src="{{ video.get_url_video() }}" type="video/mp4">
+    </video>
+
+
+
+    <a href="{{ url_for('index') }}">Home</a>
+
 
 </body>
 </html>

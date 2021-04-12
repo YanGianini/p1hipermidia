@@ -15,7 +15,7 @@
         <h2>videos mais curtidos</h2>
         {% for video in categoria.get_videos()%}
 
-        <h4>{{ video.get_titulo() }}</h4>
+        <a href="{{ url_for('videos', id=video.get_id()) }}"><h4>{{ video.get_titulo() }}</h4></a>
 
         {% endfor %}
     </div>
@@ -24,6 +24,6 @@
 
     {% endfor %}
 
-    <a href="{{ url_for('videos') }}">video</a>
+    
 </body>
 </html>

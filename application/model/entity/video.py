@@ -13,7 +13,7 @@ class Video():
     def get_id(self):
         return self.id
 
-    def get_id(self, id):
+    def set_id(self, id):
         self.id = id
 
     def get_url_video(self):

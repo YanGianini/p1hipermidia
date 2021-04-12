@@ -8,6 +8,7 @@ class CategoriaDAO():
     def lista_categorias(self):
         return self.categorias
 
+    
 
 
  
