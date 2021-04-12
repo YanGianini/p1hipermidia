@@ -1,6 +1,7 @@
 
 class Video():
-    def __init__(self, url_video, url_img, titulo, descricao, qtd_curtidas, data, categoria):
+    def __init__(self, id, url_video, url_img, titulo, descricao, qtd_curtidas, data, categoria):
+        self.id = id
         self.url_video = url_video
         self.url_img = url_img
         self.titulo = titulo
@@ -8,6 +9,12 @@ class Video():
         self.qtd_curtidas = qtd_curtidas
         self.data = data
         self.categoria = categoria
+
+    def get_id(self):
+        return self.id
+
+    def get_id(self, id):
+        self.id = id
 
     def get_url_video(self):
         return self.url_video

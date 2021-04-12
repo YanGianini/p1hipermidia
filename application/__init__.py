@@ -1,6 +1,40 @@
 from flask import Flask
 import os
+from application.model.entity.video import Video
+from application.model.entity.categoria import Categoria
+
 
 app = Flask(__name__, static_folder=os.path.abspath("application/view/static"), template_folder=os.path.abspath("application/view/templates"))
+
+
+video1 = Video(1, "urls", "urls da img", "titulo aqui", 'descrição aqui', 4, "10/03/2021", "humor")
+video2 = Video(2, "urls", "urls da img", "titulo aqui", 'descrição aqui', 1, "23/05/2021", "humor")
+video3 = Video(3, "urls", "urls da img", "titulo aqui", "descrição aqui", 2, "02/12/2021", "humor")
+
+video4 = Video(4, "urls", "urls da img", "titulo aqui", "descrição aqui", 3, "02/12/2021", "musica")
+video5 = Video(5, "urls", "urls da img", "titulo aqui", "descrição aqui", 5, "02/12/2021", "musica")
+video6 = Video(6, "urls", "urls da img", "titulo aqui", "descrição aqui", 1, "02/12/2021", "musica")
+
+video7 = Video(7, "urls", "urls da img", "titulo aqui", "descrição aqui", 1, "02/12/2021", "comida")
+video8 = Video(8, "urls", "urls da img", "titulo aqui", "descrição aqui", 9, "02/12/2021", "comida")
+video9 = Video(9, "urls", "urls da img", "titulo aqui", "descrição aqui", 7, "02/12/2021", "comida")
+
+
+categoria1 = Categoria(1, "humor", "coisas engraçadas no geral", "urls aqui")
+categoria2 = Categoria(2, "musica", "musicas de diversos generos", "urls")
+categoria3 = Categoria(3, "comida", "receitas e culinaria", "urls")
+
+categoria1.add_video(video1)
+categoria1.add_video(video2)
+categoria1.add_video(video3)
+
+categoria2.add_video(video4)
+categoria2.add_video(video5)
+categoria2.add_video(video6)
+
+categoria3.add_video(video7)
+categoria3.add_video(video8)
+categoria3.add_video(video9)
+
 
 from application.controller import home_controller
