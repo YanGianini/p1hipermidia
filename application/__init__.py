@@ -7,8 +7,8 @@ from application.model.entity.categoria import Categoria
 app = Flask(__name__, static_folder=os.path.abspath("application/view/static"), template_folder=os.path.abspath("application/view/templates"))
 
 
-video1 = Video(1, "https://www.youtube.com/watch?v=adLGHcj_fmA&ab_channel=BrunoMars", "urls da img", "titulo aqui1", 'descrição aqui', 4, "10/03/2021", "humor")
-video2 = Video(2, "urls", "urls da img", "titulo aqui2", 'descrição aqui', 1, "23/05/2021", "humor")
+video1 = Video(1, "https://www.youtube.com/embed/adLGHcj_fmA", "urls da img", "titulo aqui1", 'descrição aqui', 4, "10/03/2021", "humor")
+video2 = Video(2, "https://www.youtube.com/embed/uNT_AxXrUGs", "urls da img", "titulo aqui2", 'descrição aqui', 1, "23/05/2021", "humor")
 video3 = Video(3, "urls", "urls da img", "titulo aqui3", "descrição aqui", 2, "02/12/2021", "humor")
 
 video4 = Video(4, "urls", "urls da img", "titulo aqui4", "descrição aqui", 3, "02/12/2021", "musica")
