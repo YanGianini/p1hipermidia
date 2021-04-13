@@ -32,7 +32,7 @@ class Categoria():
         self.descricao = descricao
 
     def get_url_img(self):
-        return self.descricao
+        return self.url_img
 
     def set_url_img(self, url_img):
         self.url_img = url_img

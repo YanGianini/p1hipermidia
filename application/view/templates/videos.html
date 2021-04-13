@@ -13,9 +13,9 @@
     <p>{{ video.get_titulo() }}</p>
     <p>{{ video.get_url_video() }}</p>
 
-
-    <iframe width="560" height="315" src="{{ video.get_url_video() }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+    <p>
+        <iframe width="560" height="315" src="{{ video.get_url_video() }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
 
 
     <a href="{{ url_for('index') }}">Home</a>
