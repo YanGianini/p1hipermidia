@@ -15,7 +15,7 @@
         <div>
             <hr>
             <h2>{{categoria.get_titulo()}}</h2>
-            <img src="{{url_for('static', filename='img/'+ categoria.get_url_img() )}}" alt="" id="imgCat">
+            <img src="{{url_for('static', filename='img/'+ categoria.get_url_img() )}}" alt="" width="100" height="100">
             
             <h3>videos mais curtidos</h3>
             {% for video in categoria.get_videos()%}
